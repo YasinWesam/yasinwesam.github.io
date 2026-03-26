@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yassin | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Yassin<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"     onclick="closeMenu()">About</a>
+    <a href="#skills"    onclick="closeMenu()">Skills</a>
+    <a href="#languages" onclick="closeMenu()">Languages</a>
+    <a href="#projects"  onclick="closeMenu()">Projects</a>
+    <a href="#contact"   onclick="closeMenu()">Contact</a>
+  </div>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-pfp">
+        <div class="pfp-ring">
+          <div class="pfp-inner">
+            <img src="images/pfp.jpeg" alt="Yassin" />
+          </div>
+        </div>
+        <span class="pfp-badge">#1 Undertale Fan</span>
+      </div>
+
+      <div class="hero-text">
+        <span class="hero-tag">✦ Self-Taught Developer · Egypt</span>
+        <h1 class="hero-name">Hi, I'm<br><span class="accent">Yassin.</span></h1>
+        <p class="hero-sub">
+          A 16 years old developer passionate about building things like: desktop apps, mobile apps, video games and websites. I constantly learn new things by time.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#skills"  class="btn btn-ghost">See my work ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="about" class="reveal">
+      <p class="section-label">// a bit about me</p>
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">💻</div>
+          <h3>Self-Taught</h3>
+          <p>Everything I know, I learned on my own from tutorials, docs, trial and error, and a f#cked up sleep schedule.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🌍</div>
+          <h3>Born in Egypt</h3>
+          <p>I was born and raised in Egypt.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🧠</div>
+          <h3>Years of experience</h3>
+          <p>I have been learning programming since I was seven.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="skills" class="reveal">
+      <p class="section-label">// what I do</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <div class="skill-info">
+            <h3>Desktop Applications</h3>
+            <p>Building native desktop apps using C++ (Qt) for performance and control.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <div class="skill-info">
+            <h3>Android Development</h3>
+            <p>I have some experience developing Android apps using Kotlin.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <div class="skill-info">
+            <h3>Mobile Applications</h3>
+            <p>I use Dart & Flutter to build multi-platform mobile applications.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎮</div>
+          <div class="skill-info">
+            <h3>Game Development</h3>
+            <p>Creating 2D and 3D games in Godot. (my favorite)</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-info">
+            <h3>Frontend Development</h3>
+            <p>Building good looking website designs. Take this portfolio as an example.</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <div class="skill-info">
+            <h3>Discord Bots</h3>
+            <p>Developing discord bots using discord.py</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="languages" class="reveal">
+      <p class="section-label">// Tools</p>
+      <h2 class="section-title">Programming Languages</h2>
+      <div class="lang-grid">
+        <div class="lang-pill"><span class="lang-dot"></span>C++</div>
+        <div class="lang-pill"><span class="lang-dot"></span>Python</div>
+        <div class="lang-pill"><span class="lang-dot"></span>Java</div>
+        <div class="lang-pill"><span class="lang-dot"></span>JavaScript</div>
+        <div class="lang-pill"><span class="lang-dot"></span>Kotlin</div>
+        <div class="lang-pill"><span class="lang-dot"></span>Dart / Flutter</div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="projects" class="reveal">
+      <p class="section-label">// things i built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img class="project-img" src="images/BF.png" alt="Brainf#ck Interpreter" />
+          <div class="project-body">
+            <div class="project-title">Brainf#ck Interpreter</div>
+            <p class="project-desc">A full Brainfuck interpreter made using C++ & Python with shared library. (Contains GUI)</p>
+            <div class="project-langs">
+              <span class="project-lang">C++</span>
+              <span class="project-lang">Python</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/YasinWesam/BrainFuck-Interpreter" class="project-link" target="_blank" rel="noopener">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              View Project
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img class="project-img" src="images/Nexus.png" alt="Nexus Bot" />
+          <div class="project-body">
+            <div class="project-title">Nexus Bot</div>
+            <p class="project-desc">A helpful Discord bot made using discord.py.</p>
+            <div class="project-langs">
+              <span class="project-lang">Python</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="project-soon">coming soon..</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="contact" class="reveal">
+      <p class="section-label">// let's talk</p>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <p>Got a project idea, want to collaborate, or just want to say hi? Reach out to me on Discord. Don't worry, I don't bite.</p>
+          <a href="https://discord.com/users/983438985818931210" class="discord-btn" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.03.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            Message me on Discord
+          </a>
+          <div class="social-row">
+            <a href="https://github.com/YasinWesam" class="social-pill" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://x.com/YasinWesamX" class="social-pill" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-left">Made by <strong>@YasinWesam</strong> · All rights reserved © 2026</div>
+    <div class="footer-right">
+      Made with
+      <span class="tech-badge">HTML</span>
+      <span class="tech-badge">CSS</span>
+      <span class="tech-badge">JS</span>
+      and ♥️
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
